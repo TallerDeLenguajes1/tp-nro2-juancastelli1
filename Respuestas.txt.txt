@@ -1,0 +1,4 @@
+Respuesta:
+El archivo ya no se ve porque esta en la otra rama, al no haber juntado las dos ramas no tienen los mismos archivos ni los mismos cambios, ya que son como dos versiones separadas del mismo repositorio.
+con gitk --all se puede observar como son caminos separados
+Al hacer merge se juntan las ramificaciones por lo que ya figura el archivo tp2_1_2 y el archivo respuestas.txt que estaban en ramas diferentes
