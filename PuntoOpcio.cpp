@@ -32,8 +32,8 @@ void caractpc(Pc compu){
 	printf("Fecha fabricacion:%d\n", compu.fechafab);
 	printf("Tipo cpu:");
 	puts(compu.tipo_cpu);
-	printf("\n");
 	printf("Cantidad de nucleos:%d\n", compu.fechafab);
+	printf("\n");
 	
 
 }
@@ -66,7 +66,7 @@ void cargar (Pc * compus, int cant){
 void listarpcs(Pc * lista, int cant){
 	for (int i = 0; i < cant; ++i)
 	{
-		printf("Pc %d:\n", i);
+		printf("Pc %d:\n", i+1);
 		caractpc(*(lista + i));
 		printf("\n");
 	}
@@ -75,6 +75,7 @@ void listarpcs(Pc * lista, int cant){
 void pcvieja(Pc * lista, int cant){
 	Pc pcvieja;
 	pcvieja.fechafab = 9999;
+	printf("La pc Mas vieja:\n" );
 	for (int i = 0; i < cant; ++i)
 	{
 		if (lista[i].fechafab < pcvieja.fechafab)
